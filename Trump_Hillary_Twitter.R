@@ -193,8 +193,3 @@ top_word_2 %>% plot_ly(x = ~ retweet_ave, y = ~ favorite_ave,
   layout(title = 'Top 50 Liked Topics (2grams) for Each Candidate',
          xaxis = list(title = '# Retweet Average', type = 'log'),
          yaxis = list(title = '# favorite Average', type = 'log'))
-
-
-US_election %>%
-  filter(str_detect(text, 'Miss Piggy')) %>% 
-  View()
